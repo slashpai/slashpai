@@ -48,80 +48,91 @@ Here are some ideas to get you started:
    grpc_tools_ruby_protoc -I resume --ruby_out resume --grpc_out resume resume/resume.proto
    ```
 
-   ```ruby
+    ```ruby
+    # resume_server.rb
+
     this_dir = File.expand_path(File.dirname(__FILE__))
     $LOAD_PATH.unshift(this_dir) unless $LOAD_PATH.include?(this_dir)
 
     require 'resume_services_pb'
+
     class ResumeServer < Details::Service
-    def get_job(job_req, _unused_call)
-        p "Received #{job_req} from client"
+      def get_job(job_req, _unused_call)
+        p "Received #{job_req} from client rpc call get_job()"
         Job.new(field: 'Cloud Operations', role: 'Senior System Engineer', experience: 7)
-    end
+      end
 
-    def get_interests(int_req, _unused_call)
-        p "Received #{int_req} from client"
-        Interests.new(areas: ['Programming', 'Distributed Computing', 'Designing Micro Services', 'Cloud Computing', 'Full Stack Web Development', 'Machine Learning'])
-    end
+        def get_interests(int_req, _unused_call)
+          p "Received #{int_req} from client rpc call get_interests()"
+          Interests.new(areas: ['Programming', 'Distributed Computing', 'Designing Micro Services', 'Cloud Computing', 'Full Stack Web Development', 'Machine Learning'])
+        end
 
-    def get_skills(skill_req, _unused_call)
-        p "Received #{skill_req} from client"
-        Skills.new(skills: %w[Linux Hadoop Docker Kubernetes Chef Ansible Consul Terraform Openstack AWS Jenkins Zabbix Splunk Prometheus Grafana NewRelic git protobuf gRPC Selenium])
-    end
+        def get_skills(skill_req, _unused_call)
+          p "Received #{skill_req} from client rpc call get_skills()"
+          Skills.new(skills: %w[Linux Hadoop Docker Kubernetes Chef Ansible Consul Terraform Openstack AWS Jenkins Zabbix Splunk Prometheus Grafana NewRelic git protobuf gRPC Selenium])
+        end
 
-    def get_programming_languages(prog_lang_req, _unused_call)
-        p "Received #{prog_lang_req} from client"
-        ProgrammingLanguages.new(languages: %w[C C++ Java Python Groovy Ruby Go Shell Scripting JavaScript])
-    end
-
+        def get_programming_languages(prog_lang_req, _unused_call)
+          p "Received #{prog_lang_req} from client rpc call get_programming_languages()"
+          ProgrammingLanguages.new(languages: %w[C C++ Java Python Groovy Ruby Go Shell Scripting JavaScript])
+        end
     end
 
     def main
-    s = GRPC::RpcServer.new
-    s.add_http2_port('0.0.0.0:50051', :this_port_is_insecure)
-    s.handle(ResumeServer)
-    s.run_till_terminated_or_interrupted([1, 'int', 'SIGQUIT'])
+      s = GRPC::RpcServer.new
+      s.add_http2_port('0.0.0.0:50051', :this_port_is_insecure)
+      s.handle(ResumeServer)
+      s.run_till_terminated_or_interrupted([1, 'int', 'SIGQUIT'])
     end
 
-    main
-   ```
+  main
+  ```
 
-   ```ruby
-    this_dir = File.expand_path(File.dirname(__FILE__))
-    $LOAD_PATH.unshift(this_dir) unless $LOAD_PATH.include?(this_dir)
+  ```ruby
+  # resume_client.rb
 
-    require 'resume_services_pb'
+  this_dir = File.expand_path(File.dirname(__FILE__))
+  $LOAD_PATH.unshift(this_dir) unless $LOAD_PATH.include?(this_dir)
 
-    def main
+  require 'resume_services_pb'
+
+  def main
     user = 'Pai'
     name = Name.new(name: user)
     stub = Details::Stub.new('localhost:50051', :this_channel_is_insecure)
     begin
-        job = stub.get_job(name)
-        puts "Job Field: #{job.field}"
-        puts "Job Role: #{job.role}"
-        puts "Job Experience: #{job.experience} years"
-        interests = stub.get_interests(name)
-        puts "Interests: #{interests.areas}"
-        skills = stub.get_skills(name)
-        puts "Skills: #{skills.skills}"
-        prog_lang = stub.get_programming_languages(name)
-        puts "Programming Languages: #{prog_lang.languages}"
+      job = stub.get_job(name)
+      puts "Job Field: #{job.field}"
+      puts "Job Role: #{job.role}"
+      puts "Job Experience: #{job.experience} years"
+      interests = stub.get_interests(name)
+      puts "Interests: #{interests.areas}"
+      skills = stub.get_skills(name)
+      puts "Skills: #{skills.skills}"
+      prog_lang = stub.get_programming_languages(name)
+      puts "Programming Languages: #{prog_lang.languages}"
     rescue GRPC::BadStatus => e
-        abort "ERROR: #{e.message}"
+      abort "ERROR: #{e.message}"
     end
-    end
+  end
 
-    main
-   ```
+  main
+  ```
 
   ```ruby
-  slashpai@pai  ~/github/myrepo/slashpai   master ●  (⎈ |kind-pai:default) ruby resume/resume_client.rb
+  slashpai@pai  ~/github/myrepo/slashpai   master ✚  ruby resume/resume_server.rb
+  "Received <Name: name: \"Pai\"> from client rpc call get_job()"
+  "Received <Name: name: \"Pai\"> from client rpc call get_interests()"
+  "Received <Name: name: \"Pai\"> from client rpc call get_skills()"
+  "Received <Name: name: \"Pai\"> from client rpc call get_programming_languages()"
+  ```
+
+  ```ruby
+  slashpai@pai  ~/github/myrepo/slashpai   master ●  ruby resume/resume_client.rb
   Job Field: Cloud Operations
   Job Role: Senior System Engineer
   Job Experience: 7 years
   Interests: ["Programming", "Distributed Computing", "Designing Micro Services", "Cloud Computing", "Full Stack Web Development", "Machine Learning"]
   Skills: ["Linux", "Hadoop", "Docker", "Kubernetes", "Chef", "Ansible", "Consul", "Terraform", "Openstack", "AWS", "Jenkins", "Zabbix", "Splunk", "Prometheus", "Grafana", "NewRelic", "git", "protobuf", "gRPC", "Selenium"]
   Programming Languages: ["C", "C++", "Java", "Python", "Groovy", "Ruby", "Go", "Shell", "Scripting", "JavaScript"]
-  slashpai@pai  ~/github/myrepo/slashpai   master ●  (⎈ |kind-pai:default)
   ```

@@ -1,3 +1,5 @@
+# resume_client.rb
+
 this_dir = File.expand_path(File.dirname(__FILE__))
 $LOAD_PATH.unshift(this_dir) unless $LOAD_PATH.include?(this_dir)
 
