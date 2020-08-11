@@ -1,0 +1,30 @@
+syntax = "proto3";
+
+message Name {
+    string name = 1;
+}
+
+message Job {
+    string field = 1;
+    string role = 2;
+    int32 experience = 3;
+}
+
+message Interests {
+    repeated string areas = 1;
+}
+
+message Skills {
+    repeated string skills = 1;
+}
+
+message ProgrammingLanguages {
+    repeated string languages = 1;
+}
+
+service Details {
+    rpc getJob(Name) returns (Job) {}
+    rpc getInterests(Name) returns (Interests) {}
+    rpc getSkills(Name) returns (Skills) {}
+    rpc getProgrammingLanguages(Name) returns (ProgrammingLanguages) {}
+}
