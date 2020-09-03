@@ -11,9 +11,11 @@ Here are some ideas to get you started:
 - 🌱 I’m currently learning full stack web development, building API's using gRPC and kubernetes ...
 - 💬 Ask me about programming, cloud engineering and devops tools..
 
- * [resume.proto](resume/resume.proto)
- [resume_server.rb](resume/resume_server.rb)
- [resume_client.rb](resume/resume_client.rb)
+ - [resume.proto](https://github.com/slashpai/slashpai/tree/master/resume/resume.proto)
+
+ - [resume_server.rb](https://github.com/slashpai/slashpai/tree/master/resume/resume_server.rb)
+
+ - [resume_client.rb](https://github.com/slashpai/slashpai/tree/master/resume/resume_client.rb)
 
   ```ruby
   slashpai@pai  ~/github/myrepo/slashpai   master ✚  ruby resume/resume_server.rb
