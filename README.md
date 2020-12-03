@@ -8,8 +8,8 @@ Here are some ideas to get you started:
 -->
 
 - 🔭 I’m currently working on cloud platform engineering...
-- 🌱 I’m currently learning full stack web development, building API's using gRPC and kubernetes ...
-- 💬 Ask me about programming, cloud engineering and devops tools..
+- 🌱 I’m currently learning full stack web development and building expertise in kubernetes ...
+- 💬 Ask me about programming, infrastructure automation, cloud native applications and devops tools..
 
  - [resume.proto](https://github.com/slashpai/slashpai/tree/master/resume/resume.proto)
 
