@@ -13,7 +13,7 @@ class ResumeServer < Details::Service
 
   def get_interests(int_req, _unused_call)
     p "Received #{int_req} from client rpc call get_interests()"
-    Interests.new(areas: ['Programming', 'Distributed Computing', 'Designing Micro Services', 'Cloud Computing', 'Full Stack Web Development', 'Machine Learning'])
+    Interests.new(areas: ['Programming', 'Distributed Systems', 'Designing Micro Services', 'Cloud Computing', 'Full Stack Web Development', 'Machine Learning'])
   end
 
   def get_skills(skill_req, _unused_call)
@@ -23,7 +23,7 @@ class ResumeServer < Details::Service
 
   def get_programming_languages(prog_lang_req, _unused_call)
     p "Received #{prog_lang_req} from client rpc call get_programming_languages()"
-    ProgrammingLanguages.new(languages: %w[C C++ Java Python Groovy Ruby Go Shell Scripting JavaScript])
+    ProgrammingLanguages.new(languages: %w[Ruby Go Python Groovy Shell C C++ Java JavaScript])
   end
 
 end

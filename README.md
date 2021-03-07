@@ -8,14 +8,10 @@ Here are some ideas to get you started:
 -->
 
 - 🔭 I’m currently working on cloud platform engineering...
-- 🌱 I’m currently learning full stack web development and building expertise in kubernetes ...
+- 🌱 I’m focussing on cloud observability tools and building expertise in kubernetes ...
 - 💬 Ask me about programming, infrastructure automation, cloud native applications and devops tools..
 
- - [resume.proto](https://github.com/slashpai/slashpai/tree/master/resume/resume.proto)
-
- - [resume_server.rb](https://github.com/slashpai/slashpai/tree/master/resume/resume_server.rb)
-
- - [resume_client.rb](https://github.com/slashpai/slashpai/tree/master/resume/resume_client.rb)
+  ![CKA](img/cka-certified-kubernetes-administrator.png)
 
   ```ruby
   slashpai@pai  ~/github/myrepo/slashpai   master ✚  ruby resume/resume_server.rb
@@ -30,7 +26,7 @@ Here are some ideas to get you started:
   Job Field: Cloud Operations
   Job Role: Senior System Engineer
   Job Experience: 7 years
-  Interests: ["Programming", "Distributed Computing", "Designing Micro Services", "Cloud Computing", "Full Stack Web Development", "Machine Learning"]
+  Interests: ["Programming", "Distributed Systems", "Designing Micro Services", "Cloud Computing", "Full Stack Web Development", "Machine Learning"]
   Skills: ["Linux", "Hadoop", "Docker", "Kubernetes", "Chef", "Ansible", "Consul", "Terraform", "Openstack", "AWS", "Jenkins", "Zabbix", "Splunk", "Prometheus", "Grafana", "NewRelic", "git", "protobuf", "gRPC", "Selenium"]
-  Programming Languages: ["C", "C++", "Java", "Python", "Groovy", "Ruby", "Go", "Shell", "Scripting", "JavaScript"]
+  Programming Languages: ["Ruby", "Go", "Python", "Groovy", "Shell", "C", "C++","Java" "JavaScript"]
   ```
