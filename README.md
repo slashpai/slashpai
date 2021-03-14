@@ -9,7 +9,7 @@ Here are some ideas to get you started:
 
 - 🔭 I’m currently working on cloud platform engineering...
 - 🌱 I’m focussing on cloud observability tools and building expertise in kubernetes ...
-- 💬 Ask me about programming, infrastructure automation, cloud native applications and devops tools..
+- 💬 Ask me about programming, distributed systems, infrastructure automation, cloud native applications and devops tools..
 
   ![CKA](img/cka-certified-kubernetes-administrator.png)
 
