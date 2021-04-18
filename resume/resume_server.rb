@@ -8,7 +8,7 @@ require 'resume_services_pb'
 class ResumeServer < Details::Service
   def get_job(job_req, _unused_call)
     p "Received #{job_req} from client rpc call get_job()"
-    Job.new(field: 'Cloud Operations', role: 'Senior System Engineer', experience: 7)
+    Job.new(field: 'Cloud Operations', role: 'System Architect', experience: 7)
   end
 
   def get_interests(int_req, _unused_call)

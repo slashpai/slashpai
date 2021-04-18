@@ -24,7 +24,7 @@ Here are some ideas to get you started:
   ```ruby
   slashpai@pai  ~/github/myrepo/slashpai   master ●  ruby resume/resume_client.rb
   Job Field: Cloud Operations
-  Job Role: Senior System Engineer
+  Job Role: System Architect
   Job Experience: 7 years
   Interests: ["Programming", "Distributed Systems", "Designing Micro Services", "Cloud Computing", "Full Stack Web Development", "Machine Learning"]
   Skills: ["Linux", "Hadoop", "Docker", "Kubernetes", "Chef", "Ansible", "Consul", "Terraform", "Openstack", "AWS", "Jenkins", "Zabbix", "Splunk", "Prometheus", "Grafana", "NewRelic", "git", "protobuf", "gRPC", "Selenium"]
