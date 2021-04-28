@@ -7,7 +7,5 @@ Here are some ideas to get you started:
 
 -->
 
-- 🌱 I’m focussing on cloud observability tools...
+- 🌱 I’m focussing on kubernetes and cloud observability tools...
 - 💬 Ask me about programming, distributed systems, infrastructure automation, cloud native applications and devops tools..
-
-  ![CKA](img/cka-certified-kubernetes-administrator.png)
