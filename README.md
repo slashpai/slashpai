@@ -19,6 +19,10 @@ Here are some ideas to get you started:
 - ⚡	[Engineers and Shiny Object Syndrome](https://medium.com/geekthoughts/engineers-and-the-shiny-object-syndrome-691e9ca658ba)
 
 
+**Presentations:**
+
+- [Prometheus Day Europe 2022](https://prometheusdayeu22.sched.com/event/zfKX)
+
 **Talks:**
 
 - [How to Be 10x SRE? A Deep Dive to Prometheus Operator - Jayapriya Pai & Haoyu Sun, Red Hat](https://www.youtube.com/watch?v=Uph_Say4D3M&list=PLj6h78yzYM2NxQ9cO7mUyHBNbvxuHnF3D)
