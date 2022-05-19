@@ -19,6 +19,9 @@ Here are some ideas to get you started:
 - ⚡	[Engineers and Shiny Object Syndrome](https://medium.com/geekthoughts/engineers-and-the-shiny-object-syndrome-691e9ca658ba)
 
 
+**Talks:**
+
+- [How to Be 10x SRE? A Deep Dive to Prometheus Operator - Jayapriya Pai & Haoyu Sun, Red Hat](https://www.youtube.com/watch?v=Uph_Say4D3M&list=PLj6h78yzYM2NxQ9cO7mUyHBNbvxuHnF3D)
 
 <p align="center">
   <a href ="https://www.credly.com/badges/845e7527-5034-461e-9d93-4e6686c96101"><img alt="CKA" src="img/cka-certified-kubernetes-administrator.png"> </a>
