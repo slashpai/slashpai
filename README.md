@@ -22,10 +22,12 @@ Here are some ideas to get you started:
 **Presentations:**
 
 - [Prometheus Day Europe 2022](https://prometheusdayeu22.sched.com/event/zfKX)
+- [Slides and Links](https://github.com/slashpai/speaker-notes)
 
 **Talks:**
 
-- [How to Be 10x SRE? A Deep Dive to Prometheus Operator - Jayapriya Pai & Haoyu Sun, Red Hat](https://www.youtube.com/watch?v=Uph_Say4D3M&list=PLj6h78yzYM2NxQ9cO7mUyHBNbvxuHnF3D)
+- [How to Be 10x SRE? A Deep Dive to Prometheus Operator - Jayapriya Pai & Haoyu Sun, Red Hat | Prometheus Day Europe 2022](https://www.youtube.com/watch?v=Uph_Say4D3M&list=PLj6h78yzYM2NxQ9cO7mUyHBNbvxuHnF3D)
+- [Deep Dive into the Prometheus Operator Ecosystem | KCD Bengaluru 2023](https://www.youtube.com/watch?v=P__R4CFFxEQ)
 
 **Certifications**
 
