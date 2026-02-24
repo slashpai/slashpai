@@ -30,7 +30,7 @@ Here are some ideas to get you started:
 - [Deep Dive into the Prometheus Operator Ecosystem | KCD Bengaluru 2023](https://www.youtube.com/watch?v=P__R4CFFxEQ)
 - [ScrapeConfig CRD: The Rising Star in the Prometheus-Operator Ecosystem | KCD Kerala 2024](https://www.youtube.com/watch?v=RabXsaOl1TE)
 - [Increasing developer productivity with Podman Desktop | DevConf.IN 2025](https://www.youtube.com/watch?v=VfGh3AsH9Ek)
-- [Getting Started with Open-Source Contributions: A Beginner's Guide| DevConf.IN 2026](https://www.youtube.com/watch?v=J2MSH75TdAw)
+- [Getting Started with Open-Source Contributions: A Beginner's Guide | DevConf.IN 2026](https://www.youtube.com/watch?v=J2MSH75TdAw)
 
 **Certifications**
 
