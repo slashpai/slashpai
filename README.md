@@ -7,13 +7,14 @@ Here are some ideas to get you started:
 
 -->
 
-- 💡 I transitioned into Software Engineering in 2021 from a System Engineering background...
-- 🌱 I’m focussing on kubernetes, cloud observability tools and AI technologies...
-- 💬 Ask me about programming, distributed systems, infrastructure automation, cloud native applications and devops tools...
+- 💡 I transitioned into Software Engineering in 2021 from a System Engineering background.
+- 🌱 I’m focussing on kubernetes, cloud observability tools and AI technologies.
+- 💬 Ask me about programming, distributed systems, infrastructure automation, cloud native applications and devops tools.
 - 📝	I also write technical blogs often in [medium](https://slashpai.medium.com/)
 
 **My popular posts:**
 
+- 📙 [The Modern Beginner’s Roadmap to Open Source Contribution](https://medium.com/geekthoughts/the-modern-beginners-roadmap-to-open-source-contribution-95fb8b1b8aab)
 - 🐳 [A beginner-friendly guide to Docker](https://medium.com/devops-things/a-beginner-friendly-guide-to-docker-bdc57fbbe848)
 - 🍴 [Basic Git and GitHub workflow](https://medium.com/devops-things/basic-git-and-github-workflow-595073948078)
 - ⚡	[Engineers and Shiny Object Syndrome](https://medium.com/geekthoughts/engineers-and-the-shiny-object-syndrome-691e9ca658ba)
